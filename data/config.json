@@ -1,0 +1,20 @@
+{
+  "main": {
+    "script": "libs/game.js",
+    "color": "white",
+    "gyroscopeUsable": false,
+    "buttonScale": 100,
+    "discScale": 150
+  },
+  "libraries": ["libs/three.min.js"],
+  "levels": [{
+    "name": ["Default"],
+    "file": ["data/levels/default.json"]
+    
+  },{
+    "name": ["placeholder"],
+    "file": ["data/levels/placeholder.json"]
+  }
+  
+  ]
+}
