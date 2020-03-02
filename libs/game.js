@@ -17,7 +17,7 @@ document.body.appendChild(renderer.domElement);
 //sandbox testing for rendering:
 const geomBox = new THREE.BoxGeometry(2,2,2,2);
 const boxMaterial = new THREE.MeshBasicMaterial({color: 0x00ff00});
-const box = THREE.Mesh(geomBox, boxMaterial);
+const box = new THREE.Mesh(geomBox, boxMaterial);
 scene.add(box);
 
 camera.position.z = 10;
@@ -27,6 +27,8 @@ camera.position.y = 0;
 function animate() {
   requestAnimationFrame(animate);
   renderer.render(scene, camera);
+  box.rotation.x += 0.005;
+  box.rotation.y += 0.005;
 }
 
 animate();
